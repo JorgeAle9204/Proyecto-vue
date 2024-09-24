@@ -1,6 +1,6 @@
 <template>
   <div>
- <h1>Hola Mundo</h1> 
+ <h1>Contador</h1> 
 <p>{{ contador }}</p>
 <button @click="incrementar()"> Incrementar</button>
 <button @click="decrementar()"> Decrementar</button>
