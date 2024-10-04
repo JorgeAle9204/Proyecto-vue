@@ -8,7 +8,6 @@ export const useRegistrarStore = defineStore('registrar',() => {
     const guardarRegistro = (nombreFormulario, emailFormulario) => {
             nombre.value = nombreFormulario;
             email.value = emailFormulario;
-
     }
     return {nombre, email,guardarRegistro}
 });

@@ -12,7 +12,7 @@
 import {ref} from 'vue'
 const contador = ref (0)
 const incrementar = () => {
-  contador.value++
+      contador.value++
 }
 const decrementar = () => {
   contador.value--

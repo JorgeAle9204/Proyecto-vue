@@ -22,17 +22,16 @@
 <script setup>
 import {Form, Field,ErrorMessage} from 'vee-validate';
 import {schema} from '../schemas/validationSchema';
-import { useRegistrarStore } from '../stores/registarStore';
-import{ref} from 'vue';
+import {useRegistrarStore } from '../stores/registrarStore';
+import {ref} from 'vue';
 
 const nombre = ref ('');
 const email = ref ('');
 
 const registarStore = useRegistrarStore();
-const onSubmit = () => {
-    registarStore.guardarRegistro(nombre.value, email.value);
-    console.log('Se ha envido el formulario');
-
+function onSubmit() {
+  registarStore.guardarRegistro(nombre.value, email.value);
+  console.log('Se ha envido el formulario');
 }
 </script>
 <style scoped>
